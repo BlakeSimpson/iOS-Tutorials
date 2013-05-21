@@ -107,7 +107,7 @@
     recipe14.name = @"Thai Shrimp Cake";
     recipe14.prepTime = @"1.5 hours";
     recipe14.imageFile = @"thai_shrimp_cake.jpg";
-    recipe14.ingredients = [NSArray arrayWithObjects:@"8 oz (250g) peeled and deveined raw shrimp", @"2 tablespoons red curry paste", @"1 large egg", @"2 teaspoon fish sauce", @"1 tablespoon sugar", @"2 tablespoons coconut milk", @"2 tablespoons roughly chopped Thai basil leaves", nil];
+    recipe14.ingredients = [NSArray arrayWithObjects:@"8 oz (250g) peeled and deveined raw shrimp", @"2 tablespoons red curry paste", @"1 large egg", @"2 teaspoon fish sauce", @"1 tablespoon sugar", @"2 tablespoons coconut milk", @"2 tablespoons roughly chopped Thai basil leaves",@"2 tablespoons roughly chopped Thai basil leaves",@"2 tablespoons roughly chopped Thai basil leaves",@"2 tablespoons roughly chopped Thai basil leaves", nil];
     
     Recipe *recipe15 = [Recipe new];
     recipe15.name = @"Angry Birds Cake";
@@ -150,7 +150,8 @@
     }
     
     NSArray *dataArray = (tableView == self.searchDisplayController.searchResultsTableView) ? searchResults : recipes;
-    cell.textLabel.text = [dataArray objectAtIndex:indexPath.row];
+    Recipe *data = [dataArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = data.name;
     return cell;
 }
 

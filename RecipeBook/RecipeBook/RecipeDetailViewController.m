@@ -14,7 +14,7 @@
 
 @implementation RecipeDetailViewController
 
-@synthesize ingredientDetailsLabel;
+@synthesize ingredientDetails;
 @synthesize prepTimeLabel;
 @synthesize photo;
 @synthesize recipe;
@@ -32,14 +32,14 @@
 {
     [super viewDidLoad];
     
-    NSMutableString *ingredientText;
+    NSMutableString *ingredientText = [NSMutableString string];
     
     for(NSString* ingredient in recipe.ingredients) {
         [ingredientText appendFormat:@"%@\n", ingredient];
     }
 
     prepTimeLabel.text = recipe.prepTime;
-    ingredientDetailsLabel.text = ingredientText;
+    ingredientDetails.text = ingredientText;
     photo.image = [UIImage imageNamed:recipe.imageFile];
 }
 
