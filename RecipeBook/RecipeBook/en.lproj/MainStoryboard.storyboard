@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="wkO-6O-CVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="wkO-6O-CVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
         <!--Recipe Detail View Controller-->
@@ -12,25 +12,58 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Rb5-nv-ogi">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZE9-ft-Qi0">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="99" id="yvC-fT-TRh"/>
+                                    <constraint firstAttribute="height" constant="159" id="wAt-a3-9og"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ingredients" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="210" translatesAutoresizingMaskIntoConstraints="NO" id="okx-hK-1m8">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="YVd-eu-UaT"/>
+                                    <constraint firstAttribute="height" constant="42" id="rdP-dh-IgK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="prep time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvm-cI-HF4">
+                                <color key="backgroundColor" red="0.91677989130434778" green="0.0" blue="0.0431975160578425" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="HAo-H7-rxo"/>
+                                    <constraint firstAttribute="width" constant="66" id="dnX-2P-J4d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ingredient text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5h-ml-68u">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="201" id="LkK-IS-c55"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Rb5-nv-ogi" firstAttribute="leading" secondItem="pDS-8r-3i9" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="3Eg-8i-Lln"/>
-                            <constraint firstItem="Rb5-nv-ogi" firstAttribute="top" secondItem="pDS-8r-3i9" secondAttribute="top" constant="172" id="Xlf-ex-Z3m"/>
-                            <constraint firstAttribute="trailing" secondItem="Rb5-nv-ogi" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="zsL-7J-bZq"/>
+                            <constraint firstItem="okx-hK-1m8" firstAttribute="centerY" secondItem="lvm-cI-HF4" secondAttribute="centerY" type="default" id="FTj-78-e2Y"/>
+                            <constraint firstAttribute="trailing" secondItem="e5h-ml-68u" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="GwL-7F-w0p"/>
+                            <constraint firstItem="ZE9-ft-Qi0" firstAttribute="leading" secondItem="pDS-8r-3i9" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="McH-Pb-b9L"/>
+                            <constraint firstItem="e5h-ml-68u" firstAttribute="top" secondItem="okx-hK-1m8" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="W1W-2z-U4n"/>
+                            <constraint firstAttribute="trailing" secondItem="lvm-cI-HF4" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="XiX-2f-Y4s"/>
+                            <constraint firstItem="e5h-ml-68u" firstAttribute="leading" secondItem="pDS-8r-3i9" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Y0t-D4-hue"/>
+                            <constraint firstAttribute="trailing" secondItem="ZE9-ft-Qi0" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="fzx-3X-q0C"/>
+                            <constraint firstItem="okx-hK-1m8" firstAttribute="top" secondItem="pDS-8r-3i9" secondAttribute="top" constant="193" id="kk1-3t-xa3"/>
+                            <constraint firstItem="okx-hK-1m8" firstAttribute="leading" secondItem="pDS-8r-3i9" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="vSa-B1-AL2"/>
+                            <constraint firstItem="ZE9-ft-Qi0" firstAttribute="top" secondItem="pDS-8r-3i9" secondAttribute="top" constant="20" symbolic="YES" type="default" id="zfx-NA-pqj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="46B-ef-BPL"/>
                     <connections>
-                        <outlet property="recipeLabel" destination="Rb5-nv-ogi" id="xdz-1A-0Mw"/>
+                        <outlet property="ingredientDetailsLabel" destination="e5h-ml-68u" id="f0l-sh-3Tz"/>
+                        <outlet property="photo" destination="ZE9-ft-Qi0" id="5B6-YU-7uR"/>
+                        <outlet property="prepTimeLabel" destination="lvm-cI-HF4" id="ehQ-fy-lMN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qkT-Td-hDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -40,7 +73,6 @@
         <!--Recipe Book View Controller - Recipe Book-->
         <scene sceneID="5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
                 <viewController id="2" customClass="RecipeBookViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Ulq-eG-ZQJ">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
@@ -79,6 +111,7 @@
                         <outlet property="tableViewObj" destination="Ulq-eG-ZQJ" id="Sq3-Y5-R2G"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
                 <searchDisplayController id="xXJ-fU-JQj">
                     <connections>
                         <outlet property="delegate" destination="2" id="4ss-eX-a36"/>
@@ -194,7 +227,9 @@
         <class className="RecipeDetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RecipeDetailViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="recipeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ingredientDetailsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="photo" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="prepTimeLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
     </classes>

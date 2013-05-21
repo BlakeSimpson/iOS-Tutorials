@@ -14,8 +14,10 @@
 
 @implementation RecipeDetailViewController
 
-@synthesize recipeLabel;
-@synthesize recipeName;
+@synthesize ingredientDetailsLabel;
+@synthesize prepTimeLabel;
+@synthesize photo;
+@synthesize recipe;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,8 +31,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Update recipe label
-    recipeLabel.text = recipeName;
+    
+    NSMutableString *ingredientText;
+    
+    for(NSString* ingredient in recipe.ingredients) {
+        [ingredientText appendFormat:@"%@\n", ingredient];
+    }
+
+    prepTimeLabel.text = recipe.prepTime;
+    ingredientDetailsLabel.text = ingredientText;
+    photo.image = [UIImage imageNamed:recipe.imageFile];
 }
 
 - (void)didReceiveMemoryWarning

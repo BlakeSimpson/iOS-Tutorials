@@ -22,6 +22,7 @@
 		2506D7E5174A67BB001F679C /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2506D7E4174A67BB001F679C /* AboutViewController.m */; };
 		2506D7E9174A68E1001F679C /* about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2506D7E7174A68E1001F679C /* about.jpg */; };
 		2506D7EA174A68E1001F679C /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 2506D7E8174A68E1001F679C /* about.html */; };
+		5A317FD4174B8ECF0096A7D3 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A317FD3174B8ECF0096A7D3 /* Recipe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		2506D7E4174A67BB001F679C /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		2506D7E7174A68E1001F679C /* about.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = about.jpg; sourceTree = "<group>"; };
 		2506D7E8174A68E1001F679C /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
+		5A317FD2174B8ECF0096A7D3 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
+		5A317FD3174B8ECF0096A7D3 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 				2506D7C1174A5D38001F679C /* Supporting Files */,
 				2506D7E3174A67BB001F679C /* AboutViewController.h */,
 				2506D7E4174A67BB001F679C /* AboutViewController.m */,
+				5A317FD2174B8ECF0096A7D3 /* Recipe.h */,
+				5A317FD3174B8ECF0096A7D3 /* Recipe.m */,
 			);
 			path = RecipeBook;
 			sourceTree = "<group>";
@@ -205,6 +210,7 @@
 				2506D7D7174A5D38001F679C /* RecipeBookViewController.m in Sources */,
 				2506D7E2174A633E001F679C /* RecipeDetailViewController.m in Sources */,
 				2506D7E5174A67BB001F679C /* AboutViewController.m in Sources */,
+				5A317FD4174B8ECF0096A7D3 /* Recipe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +299,7 @@
 				GCC_PREFIX_HEADER = "RecipeBook/RecipeBook-Prefix.pch";
 				INFOPLIST_FILE = "RecipeBook/RecipeBook-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -304,6 +311,7 @@
 				GCC_PREFIX_HEADER = "RecipeBook/RecipeBook-Prefix.pch";
 				INFOPLIST_FILE = "RecipeBook/RecipeBook-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -327,6 +335,7 @@
 				2506D7DC174A5D38001F679C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
